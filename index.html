@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1>Static Resume builder</h1>
+    <h6>By Areeba shah</h6>
+    <form id="Resume-Form">
+        <fieldset>
+            <legend> Personal Information</legend>
+            <br><div class="photo-section">
+                <label for="photo-upload">Upload Photo:</label>
+                <input type="file" id="photo-upload" accept="image/*">
+                <img id="photo-preview" alt="Your Photo" style="display: none;">
+            </div>
+            
+           <br> <label for="name">Name :</label>
+            <input type="text" name="name" id="name" required><br>
+            
+            <br><label for="e-mail"> Email :</label>
+            <input type="email" name="email" id="email" required><br>
+
+            <br><label for="Contact">phone :</label>
+            <input type="phone" name="Contact-No" id="Contact-No" required>
+
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Education" >Education:</label>
+            <textarea name="Education" id="Education" rows="5" required></textarea><br>
+            
+        </fieldset>
+        <!-- Skills Section -->
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="Skills" >Skills:</label>
+            <textarea name="Skills" id="Skills" rows="5" required></textarea><br>
+            
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="Work Experience" >Work Experience:</label>
+            <textarea name="Experience" id="Experience" rows="5" required></textarea><br>
+            
+        </fieldset>
+        <button type="submit">Generate Resume</button>
+        <button type="button" id="toggle-work-experience">Hide Work Experience</button>
+        <button type="button" id="toggle-skills">Hide Skills</button> 
+        <button type="button" id="toggle-education">Hide Education</button>
+        <div id="resume-output">
+
+        </div>
+        
+    </form>
+     <!-- Include the transpiled TypeScript -->
+     <script src="script/script.js"></script>
+</body>
+</html>
